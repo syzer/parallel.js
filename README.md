@@ -65,7 +65,7 @@ p.spawn(function (data) {
   
   return data;
 }).then(function (data) {
-  console.log(data) // logs sdrawrof
+  console.log(data); // logs sdrawrof
 });
 ```
 
