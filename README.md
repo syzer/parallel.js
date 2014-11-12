@@ -65,7 +65,7 @@ p.spawn(function (data) {
   
   return data;
 }).then(function (data) {
-  console.log(data) // logs sdrawrof
+  console.log(data); // logs sdrawrof
 });
 ```
 
@@ -82,7 +82,7 @@ further processing.
 *Example*
 ```javascript
 var p = new Parallel([0, 1, 2, 3, 4, 5, 6]),
-    log = function () { console.log(arguments); };
+    log = console.log;
 
 // One gotcha: anonymous functions cannot be serialzed
 // If you want to do recursion, make sure the function
